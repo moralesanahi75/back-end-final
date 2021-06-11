@@ -35,7 +35,8 @@ app.delete('/del_user', function HandleUserDel(request, response) {
     response.send('Page Pattern Match');
  })
  
- var server = app.listen(3000, function () {
+ const port = process.env.PORT || 3000;
+ var server = app.listen(port, function () {
  
     var host = server.address().address
     var port = server.address().port
