@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 // for db
-var db = require('./database');
+var db = require('./db');
 
 
 
