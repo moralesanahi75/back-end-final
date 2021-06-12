@@ -1,26 +1,22 @@
 {
   "name": "back-end-final",
-  "version": "0.0.1",
-  "description": "back end for final",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.0.0",
+  "private": true,
   "engines": {
-    "node": "12.x"
+    "node": "16.x"
+  },
+  "main": "./bin/www",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo\"Error: no test available\" && exit 1"
   },
   "dependencies": {
-    "express": "4.17.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/moralesanahi75/back-end-final.git"
-  },
-  "author": "Lesly Morales",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/moralesanahi75/back-end-final/issues"
-  },
-  "homepage": "https://github.com/moralesanahi75/back-end-final#readme"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.12.11",
+    "morgan": "~1.9.1",
+    "pug": "^3.0.2"
+  }
 }
