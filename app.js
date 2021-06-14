@@ -31,7 +31,7 @@ app.use((request, response, next) => {
 });
 
 app.use('/', indexRouter);
-app.use('/users', bookRouter);
+app.use('/books', bookRouter);
 
 // catch 404 and move to error handler
 app.use(function(req, res, next) {

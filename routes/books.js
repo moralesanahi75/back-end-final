@@ -15,9 +15,9 @@ router.post('/', (request, response, next) =>{
         let book = new BookSchema({
             title: bookJSON.title, // title: request.body.title
             author: bookJSON.author,
-            description: bookJSON.description,
             year: bookJSON.year || 0,
-            hardcover: bookJSON.hardcover ||'unknown',
+            description: bookJSON.description,
+            hardcover: bookJSON.hardcover ||'false',
             price : bookJSON.price || 0,
 
         });
