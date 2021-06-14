@@ -1,3 +1,4 @@
+// Got this from 2nd to last lecture
 const mongoose = require('mongoose');
 
 let Schema = mongoose.Schema;
@@ -5,9 +6,9 @@ let Schema = mongoose.Schema;
 let BookSchema = new Schema({
 
     title: String,
-    description: String,
-    year: Number,
     author: String,
+    year: Number,
+    description: String,
     hardcover: Boolean,
     price: Number,
 });
